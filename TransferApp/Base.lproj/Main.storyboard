@@ -74,13 +74,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwO-Nc-8U8">
+                                <rect key="frame" x="30" y="495" width="354" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save with property">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="editDataWithProperty:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GIi-6X-rP4"/>
+                                    <action selector="saveDataWithProperty:" destination="wKl-Z7-Pob" eventType="touchUpInside" id="0ab-3P-tLW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tBO-px-sL9"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
+                            <constraint firstItem="hwO-Nc-8U8" firstAttribute="top" secondItem="VsU-HN-vN3" secondAttribute="bottom" constant="30" id="6bH-SL-KV7"/>
+                            <constraint firstItem="hwO-Nc-8U8" firstAttribute="leading" secondItem="tBO-px-sL9" secondAttribute="leading" constant="30" id="GAr-az-Onw"/>
                             <constraint firstItem="tBO-px-sL9" firstAttribute="trailing" secondItem="VsU-HN-vN3" secondAttribute="trailing" constant="30" id="PBd-bu-vB4"/>
                             <constraint firstItem="VsU-HN-vN3" firstAttribute="centerY" secondItem="aBj-6B-C9i" secondAttribute="centerY" id="W8o-iw-s3n"/>
                             <constraint firstItem="VsU-HN-vN3" firstAttribute="centerX" secondItem="aBj-6B-C9i" secondAttribute="centerX" id="uvN-Mf-hZa"/>
+                            <constraint firstItem="tBO-px-sL9" firstAttribute="trailing" secondItem="hwO-Nc-8U8" secondAttribute="trailing" constant="30" id="vHs-97-qfD"/>
                             <constraint firstItem="VsU-HN-vN3" firstAttribute="leading" secondItem="tBO-px-sL9" secondAttribute="leading" constant="30" id="ynk-mo-dZl"/>
                         </constraints>
                     </view>

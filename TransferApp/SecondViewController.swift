@@ -15,6 +15,12 @@ protocol UpdatingDataController: class {
 class SecondViewController: UIViewController, UpdatingDataController {
   
   @IBOutlet var dataTextField: UITextField!
+  
+  @IBAction func saveDataWithProperty(_ sender: UIButton) {
+      self.navigationController?.viewControllers.forEach{ viewController in
+      (viewController as? UpdatableDataController)?.updatedData = dataTextField.text ?? ""
+    }
+  }
     
   var updatingData: String = ""
   
@@ -27,4 +33,6 @@ class SecondViewController: UIViewController, UpdatingDataController {
   private func updateTextFieldData(withText text: String) {
     dataTextField.text = text
   }
+  
+  
 }

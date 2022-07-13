@@ -61,11 +61,11 @@
 				E4ED0AA0287ECDEA00037AD5 /* AppDelegate.swift */,
 				E4ED0AA2287ECDEA00037AD5 /* SceneDelegate.swift */,
 				E4ED0AA4287ECDEA00037AD5 /* ViewController.swift */,
+				E4ED0AB4287ED2E600037AD5 /* SecondViewController.swift */,
 				E4ED0AA6287ECDEA00037AD5 /* Main.storyboard */,
 				E4ED0AA9287ECDEB00037AD5 /* Assets.xcassets */,
 				E4ED0AAB287ECDEB00037AD5 /* LaunchScreen.storyboard */,
 				E4ED0AAE287ECDEB00037AD5 /* Info.plist */,
-				E4ED0AB4287ED2E600037AD5 /* SecondViewController.swift */,
 			);
 			path = TransferApp;
 			sourceTree = "<group>";
