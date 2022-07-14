@@ -34,14 +34,60 @@
                                     <action selector="editDataWithProperty:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZ5-TX-hCz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rc-IT-Mue">
+                                <rect key="frame" x="30" y="564" width="354" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change with segue">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="editDataWithProperty:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGg-B8-QtE"/>
+                                    <segue destination="wKl-Z7-Pob" kind="show" identifier="toEditScreen" id="Jp0-ch-oYp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyD-JJ-29J">
+                                <rect key="frame" x="30" y="632" width="354" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change with delegate">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="editDataWithDelegate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CNd-B8-DX6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXN-k5-szo">
+                                <rect key="frame" x="30" y="700" width="354" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change with closure">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="editDataWithClosure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5CF-ja-sPw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
                             <constraint firstItem="tQB-d1-5hZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="5V0-Jx-Ini"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RyD-JJ-29J" secondAttribute="trailing" constant="30" id="Dau-bC-8eP"/>
+                            <constraint firstItem="1Rc-IT-Mue" firstAttribute="top" secondItem="tQB-d1-5hZ" secondAttribute="bottom" constant="30" id="HJf-TF-qw1"/>
+                            <constraint firstItem="1Rc-IT-Mue" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Hce-Z3-zYu"/>
                             <constraint firstItem="tQB-d1-5hZ" firstAttribute="top" secondItem="zNq-KU-0ZE" secondAttribute="bottom" constant="30" id="JQs-xB-qat"/>
                             <constraint firstItem="zNq-KU-0ZE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L0d-5h-ECh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vXN-k5-szo" secondAttribute="trailing" constant="30" id="NWB-VY-zX6"/>
+                            <constraint firstItem="RyD-JJ-29J" firstAttribute="top" secondItem="1Rc-IT-Mue" secondAttribute="bottom" constant="30" id="QIV-WC-zdO"/>
                             <constraint firstItem="zNq-KU-0ZE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YPg-PC-awk"/>
+                            <constraint firstItem="vXN-k5-szo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="jXY-nr-FZt"/>
+                            <constraint firstItem="vXN-k5-szo" firstAttribute="top" secondItem="RyD-JJ-29J" secondAttribute="bottom" constant="30" id="krx-4A-1bk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Rc-IT-Mue" secondAttribute="trailing" constant="30" id="l3I-Xu-4Hl"/>
+                            <constraint firstItem="RyD-JJ-29J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="qsV-Rs-HSz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tQB-d1-5hZ" secondAttribute="trailing" constant="30" id="zgD-K7-NTm"/>
                         </constraints>
                     </view>
@@ -54,7 +100,7 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="91.741071428571431"/>
         </scene>
-        <!--Title-->
+        <!--Scene B-->
         <scene sceneID="Z4Y-yL-F5I">
             <objects>
                 <viewController storyboardIdentifier="SecondViewController" id="wKl-Z7-Pob" customClass="SecondViewController" customModule="TransferApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,13 +108,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNT-SS-eh3">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Scene B" largeTitleDisplayMode="always" id="X5k-hx-8sc"/>
-                                </items>
-                            </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VsU-HN-vN3">
                                 <rect key="frame" x="30" y="431" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -83,8 +122,43 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="editDataWithProperty:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GIi-6X-rP4"/>
                                     <action selector="saveDataWithProperty:" destination="wKl-Z7-Pob" eventType="touchUpInside" id="0ab-3P-tLW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBd-iN-AbQ">
+                                <rect key="frame" x="30" y="563" width="354" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save with unwind">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="aSi-fv-vMp" kind="unwind" identifier="toFirstScreen" unwindAction="unwindToFirstScreen:" id="ulG-b6-h3j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vP-lg-0UX">
+                                <rect key="frame" x="30" y="631" width="354" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save with delegate">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveDataWithDelegate:" destination="wKl-Z7-Pob" eventType="touchUpInside" id="UDk-6G-XoG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxJ-00-NIM">
+                                <rect key="frame" x="30" y="699" width="354" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save with closure">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveDataWithClosure:" destination="wKl-Z7-Pob" eventType="touchUpInside" id="oyB-p0-uSd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -92,20 +166,30 @@
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="hwO-Nc-8U8" firstAttribute="top" secondItem="VsU-HN-vN3" secondAttribute="bottom" constant="30" id="6bH-SL-KV7"/>
+                            <constraint firstItem="gxJ-00-NIM" firstAttribute="leading" secondItem="tBO-px-sL9" secondAttribute="leading" constant="30" id="EGb-eW-QBm"/>
                             <constraint firstItem="hwO-Nc-8U8" firstAttribute="leading" secondItem="tBO-px-sL9" secondAttribute="leading" constant="30" id="GAr-az-Onw"/>
                             <constraint firstItem="tBO-px-sL9" firstAttribute="trailing" secondItem="VsU-HN-vN3" secondAttribute="trailing" constant="30" id="PBd-bu-vB4"/>
+                            <constraint firstItem="6vP-lg-0UX" firstAttribute="leading" secondItem="tBO-px-sL9" secondAttribute="leading" constant="30" id="Tne-Jk-f2c"/>
+                            <constraint firstItem="tBO-px-sL9" firstAttribute="trailing" secondItem="6vP-lg-0UX" secondAttribute="trailing" constant="30" id="VSC-Mg-dbn"/>
+                            <constraint firstItem="6vP-lg-0UX" firstAttribute="top" secondItem="dBd-iN-AbQ" secondAttribute="bottom" constant="30" id="Vba-7l-GsI"/>
                             <constraint firstItem="VsU-HN-vN3" firstAttribute="centerY" secondItem="aBj-6B-C9i" secondAttribute="centerY" id="W8o-iw-s3n"/>
+                            <constraint firstItem="tBO-px-sL9" firstAttribute="trailing" secondItem="gxJ-00-NIM" secondAttribute="trailing" constant="30" id="YQC-nw-LRj"/>
+                            <constraint firstItem="tBO-px-sL9" firstAttribute="trailing" secondItem="dBd-iN-AbQ" secondAttribute="trailing" constant="30" id="YUA-m3-Zjd"/>
+                            <constraint firstItem="gxJ-00-NIM" firstAttribute="top" secondItem="6vP-lg-0UX" secondAttribute="bottom" constant="30" id="qaf-TC-vjo"/>
+                            <constraint firstItem="dBd-iN-AbQ" firstAttribute="leading" secondItem="tBO-px-sL9" secondAttribute="leading" constant="30" id="sC2-gk-Gkx"/>
                             <constraint firstItem="VsU-HN-vN3" firstAttribute="centerX" secondItem="aBj-6B-C9i" secondAttribute="centerX" id="uvN-Mf-hZa"/>
                             <constraint firstItem="tBO-px-sL9" firstAttribute="trailing" secondItem="hwO-Nc-8U8" secondAttribute="trailing" constant="30" id="vHs-97-qfD"/>
+                            <constraint firstItem="dBd-iN-AbQ" firstAttribute="top" secondItem="hwO-Nc-8U8" secondAttribute="bottom" constant="30" id="xrS-VD-fAk"/>
                             <constraint firstItem="VsU-HN-vN3" firstAttribute="leading" secondItem="tBO-px-sL9" secondAttribute="leading" constant="30" id="ynk-mo-dZl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="4bv-IC-sdx"/>
+                    <navigationItem key="navigationItem" title="Scene B" id="4bv-IC-sdx"/>
                     <connections>
                         <outlet property="dataTextField" destination="VsU-HN-vN3" id="r60-JN-eQD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYI-EM-i1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="aSi-fv-vMp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1778" y="92"/>
         </scene>
@@ -125,7 +209,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ed-Ds-Ubr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="91.741071428571431"/>
+            <point key="canvasLocation" x="246" y="92"/>
         </scene>
     </scenes>
     <resources>
